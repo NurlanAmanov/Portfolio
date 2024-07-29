@@ -308,8 +308,111 @@ nav {
 }
 .portf-proje img{
     width: 100%;
+    border-radius: 5px;
   
 }
+#contact{
+    padding: 30px;
+}
+#contact h1{
+    color: var(--text);
+
+    text-align: center;
+    font: 1.5em "Merriweather", serif;
+}
+.contact-main{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-content{
+ 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    background: var(--textcolor2);
+    margin: auto;
+    overflow: hidden;
+}
+.contact-content span{
+    font: 1em "Chakra Petch", sans-serif;
+    margin-left: 10px;
+    text-align: center;
+}
+.contact-content input{
+    font: .9em "Merriweather", serif;
+    color: #000;
+    background: #eee;
+    border: none;
+    outline: none;
+    margin: 10px 10px;
+    width: 200px;
+    height: 30px;
+}
+.contact-content textarea{
+    color: #000;
+    font: .9em "Merriweather", serif;
+    background: #eee;
+    border: none;
+    outline: none;
+    width:200px ;
+}
+.contact-content button{
+    font: .9em "Merriweather", serif;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: orange
+}
+.contatc-img{
+    display: none;
+}
+   footer{ border-top: 1px solid #00FFFF;
+    padding: 30px
+   } 
+   footer h1{
+    text-align: center;
+    font: 1.3em "Chakra Petch", sans-serif;
+    color: #00FFFF;
+   }
+   .social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .media p{
+    text-align: center;
+    font: 1.4em "Merriweather", serif;
+    margin: 10px auto;
+    color: #fff;
+   }
+   .media h3{
+    font: 1.5em "Merriweather", serif;
+    margin: 10px auto;
+    color: #fff;
+   }
+   .media i{
+    font-size: 1.3em;
+    margin-left: 10px;
+   }
+   #insta{color: #E1306C; transition: .2s ease;}
+   #github{color: #fafbfc; transition: .2s ease;}
+   #linked{color: #0a66c2; transition: .2s ease;}
+   .media  i:hover{
+    transform: rotate(45deg);
+   }
 @keyframes sekil {
     0% {
         transform: rotate(0);
@@ -368,7 +471,7 @@ nav {
     .desktop #menu {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
 
     }
 
@@ -579,4 +682,81 @@ nav {
     .portf-proje img:hover{
       transform: scale(1.2);
     }
+    .contact-main{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+      text-align: center;
+    }
+    .contact-content{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        width: 75%;
+        border-radius: 10px;
+        background: var(--textcolor2);
+        margin: auto 30px;
+        overflow: hidden;
+    }
+    .contact-content span{
+        font: 1em "Chakra Petch", sans-serif;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .contact-content input{
+        font: .9em "Merriweather", serif;
+        color: #000;
+        background: #eee;
+        border: none;
+        outline: none;
+        margin: 10px 10px;
+        width: 100%;
+        height: 30px;
+    }
+    .contact-content textarea{
+        color: #000;
+        font: .9em "Merriweather", serif;
+        background: #eee;
+        border: none;
+        outline: none;
+        width:100% ;
+    }
+    .contact-content button{
+        font: .9em "Merriweather", serif;
+        color: #fff;
+        border-radius: 10px;
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        border: none;
+        outline: none;
+        background: orange
+    }
+    .contatc-img {
+        display: block;
+        animation: elaqe 2s  infinite linear;
+     
+    }
+    .contatc-img img{
+        width:80%;
+    }
+    @keyframes elaqe {
+        0%{
+            transform: translate(0, -10px);
+        }
+       
+        50%{
+            transform: translate(0, 20px);
+        }
+       
+        100%{
+            transform: translate(0,-5px);
+        }
+        
+    }
+    
 }

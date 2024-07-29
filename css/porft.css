@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --black: #191919;
+    --text: #fff;
+    --textcolor1: #00FFFF;
+    --textcolor2: #66FF00;
+    --blue: #00FFFF;
+}
+
+input[type="checkbox"]:checked~#menu {
+    display: block;
+}
+
+
+body {
+    background: var(--black);
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+#logo h2 {
+    color: var(--blue);
+    font: 2em "Chakra Petch", sans-serif, bold;
+    text-transform: uppercase;
+}
+
+#logo span {
+    color: orange;
+}
+
+.logo i {
+    font-size: 1.8em;
+}
+
+.sidbars {
+    z-index: 2;
+    width: 100%;
+    max-width: 420px;
+    position: fixed;
+    background: #15f4ee;
+    top: 0;
+    right: -100%;
+    transition: .5s;
+    height: 100vh;
+}
+
+
+.logo,
+.sidbars i {
+    color: var(--text);
+}
+
+.barslogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 100%;
+    width: 40%;
+    height: 20%;
+    margin: 30px auto;
+
+}
+
+
+#menu {
+    min-width: 260px;
+    width: 100%;
+}
+
+#menu li {
+
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaa;
+    padding: 10px
+}
+
+#menu li a {
+
+    text-decoration: none;
+    font: 1.2em "Chakra Petch", sans-serif, bold;
+    color: #000;
+}
+
+#menu i {
+    margin: 0 10px 0 10px;
+}
+
+.closed {
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+
+    i {
+        cursor: pointer;
+    }
+}
+
+#bars {
+    cursor: pointer;
+    display: none;
+}
+
+#color {
+    cursor: pointer;
+    display: none;
+}
+
+#bars:checked~.sidbars {
+    right: 0 !important;
+}
+
+
+.desktop {
+    display: none;
+}
+footer{ border-top: 1px solid #00FFFF;
+    padding: 30px
+   } 
+   footer h1{
+    text-align: center;
+    font: 1.3em "Chakra Petch", sans-serif;
+    color: #00FFFF;
+   }
+   .social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .media p{
+    text-align: center;
+    font: 1.4em "Merriweather", serif;
+    margin: 10px auto;
+    color: #fff;
+   }
+   .media h3{
+    font: 1.5em "Merriweather", serif;
+    margin: 10px auto;
+    color: #fff;
+   }
+   .media i{
+    font-size: 1.3em;
+    margin-left: 10px;
+   }
+   #insta{color: #E1306C; transition: .2s ease;}
+   #github{color: #fafbfc; transition: .2s ease;}
+   #linked{color: #0a66c2; transition: .2s ease;}
+   .media  i:hover{
+    transform: rotate(45deg);
+   }
+.projemain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.projemain h3{
+    font: 1.5em "Merriweather", serif;
+    color: #fff;margin: 
+    20px;
+}
+   .projects img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+   }
+   @media only screen and (min-width: 768px) {
+
+    .sidbars,
+    label {
+        display: none;
+    }
+
+    #logo h2 {
+        color: var(--blue);
+        font: 2em "Chakra Petch", sans-serif, bold;
+        text-transform: uppercase;
+    }
+
+    #logo span {
+        color: orange;
+    }
+
+    nav {
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #menu {
+
+        display: block;
+    }
+
+    .desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .desktop #menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+    .desktop #menu li {
+
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        padding: 10px
+    }
+
+    .desktop #menu li a {
+        transition: .5s ease;
+        color: #00FFFF;
+        font-size: 1.4em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .desktop #menu li a:hover{
+      transform: translate(0,5px);
+        color: #66FF00;
+    }
+    .projemain{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+    }
+    .projemain h3{
+        font: 1.5em "Merriweather", serif;
+        color: #fff;
+        margin: 10px;
+       
+    }
+       .projects img{
+        border-radius: 10px;
+
+        width: 60%;
+       }
+
+}
